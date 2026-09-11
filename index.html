@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WSES 🍉 | Watermelon Seed Estimation System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🍉 WSES</div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#calculator">Estimator</a>
+            <a href="#science">Science</a>
+            <a href="#research-team">Research Team</a>
+            <a href="#why">Why?</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="floating-seed seed1">●</div>
+        <div class="floating-seed seed2">●</div>
+        <div class="floating-seed seed3">●</div>
+
+        <div class="hero-content">
+            <div class="badge">🚨 A COMPLETELY UNNECESSARY SCIENTIFIC SYSTEM</div>
+
+            <h1>
+                WE HAVE A<br>
+                <span>VERY SERIOUS</span><br>
+                PROBLEM.
+            </h1>
+
+            <p class="hero-question">How many seeds are hiding inside your watermelon?</p>
+            <p class="hero-description">Completely unnecessary. Surprisingly scientific.</p>
+
+            <button class="main-button" onclick="scrollToCalculator()">FIND OUT 🍉</button>
+
+            <p class="tiny-text">Completely unnecessary. Surprisingly scientific.</p>
+        </div>
+
+        <div class="watermelon" aria-label="Watermelon illustration">
+            <div class="watermelon-half">
+                <div class="seed s1"></div>
+                <div class="seed s2"></div>
+                <div class="seed s3"></div>
+                <div class="seed s4"></div>
+                <div class="seed s5"></div>
+                <div class="seed s6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" aria-label="Watermelon statistics">
+        <div class="stat-card">
+            <h2>100%</h2>
+            <p>Unnecessary</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>0</h2>
+            <p>People Asked For This</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>🍉</h2>
+            <p>Watermelons Investigated</p>
+        </div>
+
+        <div class="stat-card">
+            <h2>1</h2>
+            <p>Extremely Important Question</p>
+        </div>
+    </section>
+
+    <section id="calculator" class="calculator-section">
+        <div class="section-title">
+            <p class="section-label">THE MOMENT OF TRUTH</p>
+            <h2>ENTER YOUR<br><span>WATERMELON</span></h2>
+            <p>Give us some completely serious measurements.</p>
+        </div>
+
+        <div class="calculator-card">
+            <div class="input-group">
+                <label>⚖️ Weight</label>
+                <div class="input-box">
+                    <input type="number" id="weight" placeholder="Example: 4.5" step="0.1">
+                    <span>kg</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>📏 Length</label>
+                <div class="input-box">
+                    <input type="number" id="length" placeholder="Example: 30" step="0.1">
+                    <span>cm</span>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>⭕ Diameter</label>
+                <div class="input-box">
+                    <input type="number" id="diameter" placeholder="Example: 20" step="0.1">
+                    <span>cm</span>
+                </div>
+            </div>
+
+            <button class="calculate-button" onclick="estimateSeeds()">
+                CALCULATE THE ABSOLUTELY<br>UNNECESSARY ANSWER 🚀
+            </button>
+
+            <div id="calculationOverlay" class="calculation-overlay" aria-live="polite">
+                <div class="alert-box">
+                    <div class="watermelon-animation">
+                        <div class="watermelon-burst" aria-hidden="true">
+                            <div class="melon-shell melon-shell-left"></div>
+                            <div class="melon-shell melon-shell-right"></div>
+                            <div class="melon-flesh"></div>
+                            <div class="seed-particle" style="--dx:-150px; --dy:-145px; --rot:720deg;"></div>
+                            <div class="seed-particle" style="--dx:150px; --dy:-150px; --rot:-720deg;"></div>
+                            <div class="seed-particle" style="--dx:-180px; --dy:-10px; --rot:820deg;"></div>
+                            <div class="seed-particle" style="--dx:180px; --dy:-30px; --rot:-820deg;"></div>
+                            <div class="seed-particle" style="--dx:-120px; --dy:155px; --rot:980deg;"></div>
+                            <div class="seed-particle" style="--dx:125px; --dy:150px; --rot:-980deg;"></div>
+                            <div class="seed-particle" style="--dx:-210px; --dy:90px; --rot:1200deg;"></div>
+                            <div class="seed-particle" style="--dx:210px; --dy:80px; --rot:-1200deg;"></div>
+                            <div class="seed-particle" style="--dx:-80px; --dy:-200px; --rot:700deg;"></div>
+                            <div class="seed-particle" style="--dx:90px; --dy:-210px; --rot:-700deg;"></div>
+                            <div class="juice-particle" style="--dx:-90px; --dy:-80px; --size:10px;"></div>
+                            <div class="juice-particle" style="--dx:95px; --dy:-60px; --size:12px;"></div>
+                            <div class="juice-particle" style="--dx:-120px; --dy:45px; --size:9px;"></div>
+                            <div class="juice-particle" style="--dx:120px; --dy:55px; --size:11px;"></div>
+                            <div class="juice-particle" style="--dx:-40px; --dy:120px; --size:8px;"></div>
+                            <div class="juice-particle" style="--dx:50px; --dy:120px; --size:10px;"></div>
+                            <div class="juice-particle" style="--dx:0px; --dy:-170px; --size:9px;"></div>
+                            <div class="juice-particle" style="--dx:-170px; --dy:-120px; --size:7px;"></div>
+                            <div class="juice-particle" style="--dx:170px; --dy:-120px; --size:9px;"></div>
+                            <div class="juice-particle" style="--dx:0px; --dy:170px; --size:9px;"></div>
+                            <div class="shockwave"></div>
+                        </div>
+                    </div>
+
+                    <div class="alert-icon">🚨</div>
+                    <h2>WSES ALERT!</h2>
+                    <p id="alertMessage">WATERMELON ANALYSIS INITIATED</p>
+
+                    <div class="loading-bar">
+                        <div id="loadingProgress"></div>
+                    </div>
+
+                    <p id="loadingText">Preparing highly unnecessary science...</p>
+                </div>
+            </div>
+
+            <div id="result" class="result-card">
+                <p class="result-label">🔬 WSES ESTIMATION RESULT</p>
+                <h3 id="seedCount">0</h3>
+                <p class="seed-text">ESTIMATED WATERMELON SEEDS</p>
+
+                <div class="result-details">
+                    <div>
+                        <span>Seed Density</span>
+                        <strong id="seedDensity">0</strong>
+                    </div>
+
+                    <div>
+                        <span>Seed Monster Level</span>
+                        <strong id="seedLevel">---</strong>
+                    </div>
+
+                    <div>
+                        <span>Uselessness Score</span>
+                        <strong>99.9%</strong>
+                    </div>
+                </div>
+
+                <div class="funny-message" id="funnyMessage">🍉 Your watermelon has been scientifically judged.</div>
+                <div class="model-info">🧠 Model: Linear Regression • Prediction based on watermelon measurements</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="science" class="science-section">
+        <div class="section-title">
+            <p class="section-label">THE VERY SERIOUS SCIENCE</p>
+            <h2>HOW DOES THIS<br><span>WORK?</span></h2>
+            <p>Because apparently measuring a watermelon wasn't enough.</p>
+        </div>
+
+        <div class="science-grid">
+            <div class="science-card">
+                <div class="icon">⚖️</div>
+                <h3>01. Measure</h3>
+                <p>We collect the watermelon weight, length and diameter.</p>
+            </div>
+
+            <div class="science-card">
+                <div class="icon">🧠</div>
+                <h3>02. Estimate</h3>
+                <p>WSES processes the measurements using our estimation model.</p>
+            </div>
+
+            <div class="science-card">
+                <div class="icon">🍉</div>
+                <h3>03. Discover</h3>
+                <p>The system produces an estimated number of seeds.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ml-section" aria-labelledby="ml-title">
+        <div class="section-title">
+            <p class="section-label">MACHINE LEARNING</p>
+            <h2 id="ml-title">THE <span>LINEAR REGRESSION</span> PARADOX</h2>
+            <p>One model, one question, and an absurd amount of confidence.</p>
+        </div>
+
+        <div class="ml-pipeline" aria-label="Machine learning pipeline">
+            <div class="pipeline-step">
+                <span class="step-tag">INPUT</span>
+                <p>Weight, length and diameter</p>
+            </div>
+            <div class="pipeline-arrow">↓</div>
+            <div class="pipeline-step">
+                <span class="step-tag">FEATURE PROCESSING</span>
+                <p>Transform raw measurements into model inputs</p>
+            </div>
+            <div class="pipeline-arrow">↓</div>
+            <div class="pipeline-step">
+                <span class="step-tag">LINEAR REGRESSION</span>
+                <p>Learn the relationship between melon dimensions and seed count</p>
+            </div>
+            <div class="pipeline-arrow">↓</div>
+            <div class="pipeline-step emphasis">
+                <span class="step-tag">SEED ESTIMATION</span>
+                <p>Return a number with dramatic scientific confidence</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="why-section">
+        <div class="why-card">
+            <div class="big-question">?</div>
+            <p class="section-label">QUESTIONS NOBODY ASKED</p>
+            <h2>WHY DOES<br><span>WSES EXIST?</span></h2>
+
+            <div class="qa">
+                <div>
+                    <h3>Is this useful?</h3>
+                    <p>Absolutely not.</p>
+                </div>
+
+                <div>
+                    <h3>Did humanity need this?</h3>
+                    <p>No.</p>
+                </div>
+
+                <div>
+                    <h3>Did we build it anyway?</h3>
+                    <p>Obviously.</p>
+                </div>
+
+                <div>
+                    <h3>Can I still eat the watermelon?</h3>
+                    <p>PLEASE DO. 🍉</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="uselessness-section">
+        <div class="uselessness-badge">USELESSNESS SCORE — 99.9%</div>
+        <h2>Certified Unnecessary Technology™</h2>
+        <p>Measured with precision. Delivered with questionable judgment.</p>
+    </section>
+
+    <section id="research-team" class="characters-section">
+        <div class="section-title">
+            <p class="section-label">MEET THE RESEARCH TEAM</p>
+            <h2>THE PEOPLE WHO<br><span>SHOULD HAVE STOPPED</span></h2>
+            <p>Four highly qualified individuals working on a problem nobody needed solved.</p>
+        </div>
+
+        <div class="characters-grid">
+            <div class="character-card scientist">
+                <div class="character">👨‍🔬</div>
+                <div class="speech">“After years of research, I have discovered... absolutely nothing useful.”</div>
+                <h3>Dr. Melon</h3>
+                <p class="role">Chief Watermelon Scientist</p>
+            </div>
+
+            <div class="character-card robot">
+                <div class="character">🤖</div>
+                <div class="speech">“PROCESSING... PROCESSING... WHY ARE WE COUNTING SEEDS?”</div>
+                <h3>WSES-3000</h3>
+                <p class="role">Extremely Advanced Seed Calculator</p>
+            </div>
+
+            <div class="character-card seedy">
+                <div class="character">🌱</div>
+                <div class="speech">“Please stop estimating how many of us are inside.”</div>
+                <h3>Seedy</h3>
+                <p class="role">Senior Seed Representative</p>
+            </div>
+
+            <div class="character-card melonie">
+                <div class="character">🍉</div>
+                <div class="speech">“Can everyone please stop measuring me?”</div>
+                <h3>Melonie</h3>
+                <p class="role">Head of Unwilling Watermelons</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-logo">🍉 WSES</div>
+        <p>Watermelon Seed Estimation System</p>
+        <p class="footer-joke">Solving problems that never needed solving.</p>
+        <small>© 2026 WSES Labs • Probably funded by absolutely nobody.</small>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
